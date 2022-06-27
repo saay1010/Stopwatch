@@ -1,0 +1,40 @@
+
+##Clock signal
+Net "clk" LOC=V10 | IOSTANDARD=LVCMOS33;
+Net "clk" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;
+
+# PlanAhead Generated IO constraints 
+
+NET "anode[3]" IOSTANDARD = LVCMOS33;
+NET "anode[2]" IOSTANDARD = LVCMOS33;
+NET "anode[1]" IOSTANDARD = LVCMOS33;
+NET "anode[0]" IOSTANDARD = LVCMOS33;
+NET "cathode[7]" IOSTANDARD = LVCMOS33;
+NET "cathode[6]" IOSTANDARD = LVCMOS33;
+NET "cathode[5]" IOSTANDARD = LVCMOS33;
+NET "cathode[4]" IOSTANDARD = LVCMOS33;
+NET "cathode[3]" IOSTANDARD = LVCMOS33;
+NET "cathode[2]" IOSTANDARD = LVCMOS33;
+NET "cathode[1]" IOSTANDARD = LVCMOS33;
+NET "cathode[0]" IOSTANDARD = LVCMOS33;
+NET "pause" IOSTANDARD = LVCMOS33;
+NET "res" IOSTANDARD = LVCMOS33;
+NET "sel" IOSTANDARD = LVCMOS33;
+# PlanAhead Generated physical constraints 
+NET "sel" LOC = V9; 
+NET "adj" LOC = T9;
+NET "anode[3]" LOC = P17;
+NET "anode[2]" LOC = P18;
+NET "anode[1]" LOC = N15;
+NET "anode[0]" LOC = N16;
+NET "cathode[7]" LOC = T17;
+NET "cathode[6]" LOC = T18;
+NET "cathode[5]" LOC = U17;
+NET "cathode[4]" LOC = U18;
+NET "cathode[3]" LOC = M14;
+NET "cathode[2]" LOC = N14;
+NET "cathode[1]" LOC = L14;
+NET "cathode[0]" LOC = M13;
+NET "pause" LOC = T10;
+NET "res" LOC = C9;
